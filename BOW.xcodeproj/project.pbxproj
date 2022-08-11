@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472F200228998A1A00BBD888 /* Haptica in Frameworks */ = {isa = PBXBuildFile; productRef = 472F200128998A1A00BBD888 /* Haptica */; };
+		472F200528998D7900BBD888 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 472F200428998D7900BBD888 /* ActivityIndicatorView */; };
+		4746554F289337B400D0960D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4746554E289337B400D0960D /* CodeScanner */; };
+		47465552289859F000D0960D /* Stripes in Frameworks */ = {isa = PBXBuildFile; productRef = 47465551289859F000D0960D /* Stripes */; };
+		4762F218289DA287003DF544 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 4762F217289DA287003DF544 /* AlertToast */; };
 		4789F49A289180EF00741F37 /* BOWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F499289180EF00741F37 /* BOWApp.swift */; };
 		4789F49C289180EF00741F37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F49B289180EF00741F37 /* ContentView.swift */; };
 		4789F49E289180F000741F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789F49D289180F000741F37 /* Assets.xcassets */; };
 		4789F4A1289180F000741F37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789F4A0289180F000741F37 /* Preview Assets.xcassets */; };
+		4789F4A82891810500741F37 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F4A72891810500741F37 /* AppState.swift */; };
+		4789F4AE2891847600741F37 /* BitcoinDevKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4789F4AD2891847600741F37 /* BitcoinDevKit */; };
+		4789F4B02891940F00741F37 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F4AF2891940F00741F37 /* ViewModifiers.swift */; };
+		4789F4B2289194B600741F37 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F4B1289194B600741F37 /* Extensions.swift */; };
+		4789F4B4289199BF00741F37 /* PriceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789F4B3289199BF00741F37 /* PriceData.swift */; };
+		4789F4B7289199CE00741F37 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 4789F4B6289199CE00741F37 /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,10 @@
 		4789F49B289180EF00741F37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4789F49D289180F000741F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4789F4A0289180F000741F37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4789F4A72891810500741F37 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4789F4AF2891940F00741F37 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		4789F4B1289194B600741F37 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4789F4B3289199BF00741F37 /* PriceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4789F4AE2891847600741F37 /* BitcoinDevKit in Frameworks */,
+				4762F218289DA287003DF544 /* AlertToast in Frameworks */,
+				47465552289859F000D0960D /* Stripes in Frameworks */,
+				4789F4B7289199CE00741F37 /* Starscream in Frameworks */,
+				472F200228998A1A00BBD888 /* Haptica in Frameworks */,
+				472F200528998D7900BBD888 /* ActivityIndicatorView in Frameworks */,
+				4746554F289337B400D0960D /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				4789F499289180EF00741F37 /* BOWApp.swift */,
+				4789F4A72891810500741F37 /* AppState.swift */,
+				4789F4B3289199BF00741F37 /* PriceData.swift */,
 				4789F49B289180EF00741F37 /* ContentView.swift */,
+				4789F4AF2891940F00741F37 /* ViewModifiers.swift */,
+				4789F4B1289194B600741F37 /* Extensions.swift */,
 				4789F49D289180F000741F37 /* Assets.xcassets */,
 				4789F49F289180F000741F37 /* Preview Content */,
 			);
@@ -83,6 +109,15 @@
 			dependencies = (
 			);
 			name = BOW;
+			packageProductDependencies = (
+				4789F4AD2891847600741F37 /* BitcoinDevKit */,
+				4789F4B6289199CE00741F37 /* Starscream */,
+				4746554E289337B400D0960D /* CodeScanner */,
+				47465551289859F000D0960D /* Stripes */,
+				472F200128998A1A00BBD888 /* Haptica */,
+				472F200428998D7900BBD888 /* ActivityIndicatorView */,
+				4762F217289DA287003DF544 /* AlertToast */,
+			);
 			productName = BOW;
 			productReference = 4789F496289180EF00741F37 /* BOW.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,15 @@
 				Base,
 			);
 			mainGroup = 4789F48D289180EF00741F37;
+			packageReferences = (
+				4789F4AC2891847600741F37 /* XCRemoteSwiftPackageReference "bdk-swift" */,
+				4789F4B5289199CE00741F37 /* XCRemoteSwiftPackageReference "Starscream" */,
+				4746554D289337B400D0960D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				47465550289859F000D0960D /* XCRemoteSwiftPackageReference "Stripes" */,
+				472F200028998A1A00BBD888 /* XCRemoteSwiftPackageReference "Haptica" */,
+				472F200328998D7900BBD888 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				4762F216289DA287003DF544 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 4789F497289180EF00741F37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4789F4B2289194B600741F37 /* Extensions.swift in Sources */,
+				4789F4B4289199BF00741F37 /* PriceData.swift in Sources */,
+				4789F4A82891810500741F37 /* AppState.swift in Sources */,
 				4789F49C289180EF00741F37 /* ContentView.swift in Sources */,
 				4789F49A289180EF00741F37 /* BOWApp.swift in Sources */,
+				4789F4B02891940F00741F37 /* ViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +318,7 @@
 				DEVELOPMENT_TEAM = MHMRS5FLW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used to scan QR codes for transfers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +348,7 @@
 				DEVELOPMENT_TEAM = MHMRS5FLW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used to scan QR codes for transfers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +389,103 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		472F200028998A1A00BBD888 /* XCRemoteSwiftPackageReference "Haptica" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/efremidze/Haptica.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		472F200328998D7900BBD888 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4746554D289337B400D0960D /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		47465550289859F000D0960D /* XCRemoteSwiftPackageReference "Stripes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eneko/Stripes.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		4762F216289DA287003DF544 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4789F4AC2891847600741F37 /* XCRemoteSwiftPackageReference "bdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitcoindevkit/bdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		4789F4B5289199CE00741F37 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		472F200128998A1A00BBD888 /* Haptica */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 472F200028998A1A00BBD888 /* XCRemoteSwiftPackageReference "Haptica" */;
+			productName = Haptica;
+		};
+		472F200428998D7900BBD888 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 472F200328998D7900BBD888 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+		4746554E289337B400D0960D /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4746554D289337B400D0960D /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		47465551289859F000D0960D /* Stripes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47465550289859F000D0960D /* XCRemoteSwiftPackageReference "Stripes" */;
+			productName = Stripes;
+		};
+		4762F217289DA287003DF544 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4762F216289DA287003DF544 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		4789F4AD2891847600741F37 /* BitcoinDevKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4789F4AC2891847600741F37 /* XCRemoteSwiftPackageReference "bdk-swift" */;
+			productName = BitcoinDevKit;
+		};
+		4789F4B6289199CE00741F37 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4789F4B5289199CE00741F37 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4789F48E289180EF00741F37 /* Project object */;
 }
