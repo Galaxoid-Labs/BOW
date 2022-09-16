@@ -39,8 +39,15 @@ struct ContentView: View {
             case .home:
                 List {
                     MarketView()
-                    HomeHeader()
-                    TransactionsView()
+                    
+                    if (appState.syncWallet != nil) {
+                        HomeHeader()
+                        TransactionsView()
+                    } else {
+                        
+                        
+                        
+                    }
 
                 }
                 .scrollIndicators(.hidden)

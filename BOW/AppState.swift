@@ -68,7 +68,7 @@ class AppState: ObservableObject {
         await self.updateState(state: .loading)
         let db = DatabaseConfig.memory
         
-        // JUST FOR TESTING. Keys/seeds would normally be stored in keychain
+        // JUST FOR TESTING. Keys/seeds would normally be stored in keychaintw
         let key = try? restoreExtendedKey(network: .testnet, mnemonic: "whisper unusual decorate art chunk ritual reform news maid math giant virtual", password: nil)
         let xprv = key?.xprv ?? ""
         
