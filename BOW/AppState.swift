@@ -67,12 +67,15 @@ class AppState: ObservableObject {
         
         await self.updateState(state: .loading)
         let db = DatabaseConfig.memory
+
+        // JUST FOR TESTING. Keys/seeds would normally be stored in keychain
+        let key = try? DescriptorSecretKey(network: .testnet, mnemonic: "whisper unusual decorate art chunk ritual reform news maid math giant virtual", password: nil)
+        let xprv = key?.asString() ?? ""
         
-        // JUST FOR TESTING. Keys/seeds would normally be stored in keychaintw
-        let key = try? restoreExtendedKey(network: .testnet, mnemonic: "whisper unusual decorate art chunk ritual reform news maid math giant virtual", password: nil)
-        let xprv = key?.xprv ?? ""
+        //let descriptor = "wpkh(" + xprv + "/84h/1h/0h/0/*" + ")"
         
-        let descriptor = "wpkh(" + xprv + "/84h/1h/0h/0/*" + ")"
+        let descriptor = "wpkh(" + xprv.replacingOccurrences(of: "/*", with: "") + "/84h/1h/0h/0/*" + ")"
+        print(descriptor)
 //        let electrum = ElectrumConfig(url: "ssl://electrum.blockstream.info:60002", socks5: nil, retry: 5, timeout: nil, stopGap: 10)
 //        let blockchainConfig = BlockchainConfig.electrum(config: electrum)
         
@@ -89,6 +92,7 @@ class AppState: ObservableObject {
             await updateState(state: .loaded)
 
         } catch let error {
+            print(error)
             await updateState(state: WalletContainer.State.failed(error))
         }
 
@@ -111,9 +115,9 @@ class AppState: ObservableObject {
                 await updateSyncState(syncState: .synced)
                 
                 let balance = try self.syncWallet?.wallet.getBalance()
-                await self.updateBalance(balance: balance)
+                await self.updateBalance(balance: balance?.total)
                 
-                let transactions = try self.syncWallet?.wallet.getTransactions()
+                let transactions = try self.syncWallet?.wallet.listTransactions()
                 await self.updateTransactions(transactions: transactions ?? [])
             } catch {
                 await self.updateSyncState(syncState: WalletContainer.SyncState.failed(error))
@@ -127,17 +131,16 @@ class AppState: ObservableObject {
     }
     
     @MainActor
-    func updateTransactions(transactions: [BitcoinDevKit.Transaction]) {
+    func updateTransactions(transactions: [BitcoinDevKit.TransactionDetails]) {
         
         let txs = transactions.map({
-            switch $0 {
-            case .confirmed(let details, let blockTime):
-                return TransactionContainer(details: details, blockTime: blockTime)
-            case .unconfirmed(let details):
-                return TransactionContainer(details: details, blockTime: nil)
+            if let blockTime = $0.confirmationTime {
+                return TransactionContainer(details: $0, blockTime: blockTime)
+            } else {
+                return TransactionContainer(details: $0)
             }
         })
-        
+
         var unconfirmed = txs.filter({ $0.blockTime == nil })
         let confirmed = txs
             .filter({ $0.blockTime != nil })

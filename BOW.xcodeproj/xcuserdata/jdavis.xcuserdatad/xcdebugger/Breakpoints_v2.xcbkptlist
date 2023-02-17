@@ -3,4 +3,132 @@
    uuid = "99916CFA-B7DD-4BDC-ADAB-EB1D465C51EF"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E86BB397-54B6-40F8-B24D-ECD746DA28DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOW/AppState.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E86BB397-54B6-40F8-B24D-ECD746DA28DF - a1cf540fd2ea8104"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "2584">
+               </Location>
+               <Location
+                  uuid = "E86BB397-54B6-40F8-B24D-ECD746DA28DF - 2cc296adfbd47681"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "E86BB397-54B6-40F8-B24D-ECD746DA28DF - 1093ba313319ab00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E0B23D0-7580-4E08-81F6-520FCB84F82A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOW/AppState.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E0B23D0-7580-4E08-81F6-520FCB84F82A - a1cf540fd2ea8180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "2156">
+               </Location>
+               <Location
+                  uuid = "1E0B23D0-7580-4E08-81F6-520FCB84F82A - 959c7f936a3ffb03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1E0B23D0-7580-4E08-81F6-520FCB84F82A - 796d6318a3833c82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for BOW.AppState.load() async -&gt; ()"
+                  moduleName = "BOW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jdavis/Development/BOW/BOW/AppState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

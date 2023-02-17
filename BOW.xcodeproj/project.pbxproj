@@ -436,7 +436,7 @@
 			repositoryURL = "https://github.com/bitcoindevkit/bdk-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
+				minimumVersion = 0.5.1;
 			};
 		};
 		4789F4B5289199CE00741F37 /* XCRemoteSwiftPackageReference "Starscream" */ = {
